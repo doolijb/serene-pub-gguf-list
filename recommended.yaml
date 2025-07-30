@@ -1,0 +1,18 @@
+# name: string
+# pull: string
+# size: number
+# details
+#    parameter_size: string
+#    quantization_level: string
+#    modified_at: string
+#    description: string
+
+- name: bartowski/MN-12B-Lyra-v4-GGUF
+  pull: hf.co/bartowski/MN-12B-Lyra-v4-GGUF:Q4_K_M
+  size: 
+  modified_at:
+  details:
+    - parameter_size: 12B
+    - quantization_level: Q4_K_M
+    - modified_at: 
+    - description: 

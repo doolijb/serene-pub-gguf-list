@@ -9,7 +9,28 @@
 #    description: string
 
 models:
-  # 3-4GB VRAM Tier - Ultra Budget
+  # 2GB VRAM Tier - Ultra Budget
+  - name: bartowski/SmolLM3-2B-Instruct-GGUF
+    pull: hf.co/bartowski/SmolLM3-2B-Instruct-GGUF:Q4_K_M
+    size: 1.8
+    recommended_vram: 2
+    details:
+      parameter_size: 2B
+      quantization_level: Q4_K_M
+      modified_at: "2024-11"
+      description: "Ultra-efficient 2B model designed to push boundaries of small models. Supports 6 languages and advanced reasoning. While compact, can handle basic roleplay scenarios and serves as excellent ultra-budget option for extremely limited hardware."
+
+  # 4GB VRAM Tier - Budget
+  - name: TheBloke/OpenHermes-2.5-Mistral-7B-GGUF
+    pull: hf.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF:Q4_K_M
+    size: 4.37
+    recommended_vram: 4
+    details:
+      parameter_size: 7B
+      quantization_level: Q4_K_M
+      modified_at: "2023-11"
+      description: "State-of-the-art Mistral fine-tune trained on 1M GPT-4 generated entries. Excellent for roleplay with ChatML format support and strong system prompt utilization. Known for balanced performance across conversation, creative tasks, and light RP scenarios."
+
   - name: mradermacher/Roleplay-Mistral-7B-GGUF
     pull: hf.co/mradermacher/Roleplay-Mistral-7B-GGUF:Q3_K_S
     size: 3.2
@@ -20,7 +41,7 @@ models:
       modified_at: "2024-06"
       description: "Specialized roleplay model based on Mistral 7B with aggressive quantization. Maintains core RP capabilities while fitting in budget hardware. Good entry point for roleplay on limited systems."
 
-  # 5-6GB VRAM Tier - Budget
+  # 5GB VRAM Tier - Budget
   - name: bartowski/Qwen2.5-7B-Instruct-GGUF
     pull: hf.co/bartowski/Qwen2.5-7B-Instruct-GGUF:Q4_K_M
     size: 4.2
@@ -51,7 +72,7 @@ models:
       modified_at: "2024-10"
       description: "Poetic and soulful sentience simulation with vision capabilities. Advanced imatrix quantization provides superior quality. Known for emotional depth and creative expression in roleplay scenarios."
 
-  # 6-8GB VRAM Tier - Mainstream Budget
+  # 6GB VRAM Tier - Mainstream Budget
   - name: Lewdiculous/L3-8B-Stheno-v3.2-GGUF-IQ-Imatrix
     pull: hf.co/Lewdiculous/L3-8B-Stheno-v3.2-GGUF-IQ-Imatrix:Q4_K_M-imat
     size: 4.9
@@ -82,7 +103,18 @@ models:
       modified_at: "2024-08"
       description: "Uncensored Llama 3 based model with strong conversational abilities. Features agentic capabilities and function calling support. Excellent for diverse roleplay scenarios with reduced restrictions."
 
-  # 8-10GB VRAM Tier - Sweet Spot
+  # 7GB VRAM Tier - Mid-Range
+  - name: QuantFactory/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF
+    pull: hf.co/QuantFactory/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF:Q5_K_M
+    size: 6.2
+    recommended_vram: 7
+    details:
+      parameter_size: 8B
+      quantization_level: Q5_K_M
+      modified_at: "2024-07"
+      description: "Uncensored Llama 3.1 variant with enhanced creative capabilities. Higher quantization provides improved quality while maintaining efficiency. Excellent for unrestricted roleplay scenarios and creative writing."
+
+  # 8GB VRAM Tier - Sweet Spot
   - name: bartowski/MN-12B-Lyra-v4-GGUF
     pull: hf.co/bartowski/MN-12B-Lyra-v4-GGUF:Q4_K_M
     size: 7.07
@@ -113,7 +145,7 @@ models:
       modified_at: "2024-03"
       description: "Specialized 13B roleplay model with focus on rich narrative capabilities. Known for excellent character development and immersive storytelling. Part of the BlueMoon series optimized for creative RP scenarios."
 
-  # 10-12GB VRAM Tier - Enthusiast
+  # 9GB VRAM Tier - Enthusiast
   - name: bartowski/writing-roleplay-20k-context-nemo-12b-v1.0-GGUF
     pull: hf.co/bartowski/writing-roleplay-20k-context-nemo-12b-v1.0-GGUF:Q4_K_M
     size: 7.1
@@ -134,17 +166,7 @@ models:
       modified_at: "2024-01"
       description: "CAMEL model specifically trained on role-playing data. Designed for instruction-following roleplay scenarios with strong character consistency. Uses alpaca-style prompting and handles complex RP scenarios excellently."
 
-  - name: QuantFactory/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF
-    pull: hf.co/QuantFactory/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF:Q5_K_M
-    size: 6.2
-    recommended_vram: 7
-    details:
-      parameter_size: 8B
-      quantization_level: Q5_K_M
-      modified_at: "2024-07"
-      description: "Uncensored Llama 3.1 variant with enhanced creative capabilities. Higher quantization provides improved quality while maintaining efficiency. Excellent for unrestricted roleplay scenarios and creative writing."
-
-  # 12-16GB VRAM Tier - High-End
+  # 11GB VRAM Tier - High-End
   - name: bartowski/Lumimaid-Magnum-v4-12B-GGUF
     pull: hf.co/bartowski/Lumimaid-Magnum-v4-12B-GGUF:Q5_K_M
     size: 8.9
@@ -155,6 +177,7 @@ models:
       modified_at: "2024-12"
       description: "Premium merge of Lumimaid and Magnum v4 models using higher quantization for superior quality. Combines strengths of both models for exceptional creative roleplay with outstanding character development."
 
+  # 14GB VRAM Tier - Enthusiast High-End
   - name: mradermacher/SpicyFlyRP-22B-GGUF
     pull: hf.co/mradermacher/SpicyFlyRP-22B-GGUF:Q4_K_M
     size: 12.8
@@ -165,6 +188,7 @@ models:
       modified_at: "2024-08"
       description: "Large-scale roleplay specialist with 22B parameters. Designed for complex, nuanced roleplay scenarios requiring deep character understanding. Excellent for elaborate storylines and sophisticated character interactions."
 
+  # 15GB VRAM Tier - Premium High-End
   - name: bartowski/Mistral-Small-Instruct-2409-GGUF
     pull: hf.co/bartowski/Mistral-Small-Instruct-2409-GGUF:Q4_K_M
     size: 13.2

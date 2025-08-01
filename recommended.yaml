@@ -10,15 +10,15 @@
 
 models:
   # 2GB VRAM Tier - Ultra Budget
-  - name: bartowski/SmolLM3-2B-Instruct-GGUF
-    pull: hf.co/bartowski/SmolLM3-2B-Instruct-GGUF:Q4_K_M
-    size: 1.8
+  - name: mradermacher/Llama-3.2-3B-Instruct-uncensored-GGUF
+    pull: hf.co/mradermacher/Llama-3.2-3B-Instruct-uncensored-GGUF:Q2_K
+    size: 1.49
     recommended_vram: 2
     details:
-      parameter_size: 2B
-      quantization_level: Q4_K_M
-      modified_at: "2024-11"
-      description: "Ultra-efficient 2B model designed to push boundaries of small models. Supports 6 languages and advanced reasoning. While compact, can handle basic roleplay scenarios and serves as excellent ultra-budget option for extremely limited hardware."
+      parameter_size: 3B
+      quantization_level: Q2_K
+      modified_at: "2024-10"
+      description: "Uncensored version of Llama 3.2 3B with abliteration technique. Small but capable model for basic roleplay scenarios with reduced restrictions. Perfect ultra-budget option for extremely limited hardware while maintaining conversational abilities."
 
   # 4GB VRAM Tier - Budget
   - name: TheBloke/OpenHermes-2.5-Mistral-7B-GGUF

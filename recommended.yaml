@@ -10,26 +10,6 @@
 
 models:
   # 3-4GB VRAM Tier - Ultra Budget
-  - name: bartowski/SmolLM3-2B-Instruct-GGUF
-    pull: hf.co/bartowski/SmolLM3-2B-Instruct-GGUF:Q4_K_M
-    size: 1.8
-    recommended_vram: 3
-    details:
-      parameter_size: 2B
-      quantization_level: Q4_K_M
-      modified_at: "2024-11"
-      description: "Ultra-lightweight model designed to push boundaries of small models. Supports 6 languages and advanced reasoning. While smaller, can handle basic roleplay scenarios and serves as excellent fallback option for extremely limited hardware."
-
-  - name: QuantFactory/SmolVLM-256M-Instruct-GGUF
-    pull: hf.co/QuantFactory/SmolVLM-256M-Instruct-GGUF:Q4_K_M
-    size: 0.3
-    recommended_vram: 1
-    details:
-      parameter_size: 256M
-      quantization_level: Q4_K_M
-      modified_at: "2024-12"
-      description: "The smallest multimodal model in the world. Designed for maximum efficiency and can handle basic text generation. Perfect for extremely constrained environments where every MB of VRAM counts."
-
   - name: mradermacher/Roleplay-Mistral-7B-GGUF
     pull: hf.co/mradermacher/Roleplay-Mistral-7B-GGUF:Q3_K_S
     size: 3.2
